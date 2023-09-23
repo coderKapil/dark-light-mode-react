@@ -15,8 +15,9 @@ const DarkAndLightMode = () => {
   return (
     <div>
       <h1
-        className=" text-xl font-bold text-center py-5"
-        style={{ color: mode === "light" ? "black" : "white" }}
+        className={`text-xl ${
+          mode === "light" ? "text-black" : "text-white"
+        } font-bold text-center py-5`}
       >
         This is Light and Dark Mode Button
       </h1>
